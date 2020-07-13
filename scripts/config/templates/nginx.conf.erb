@@ -42,6 +42,7 @@ http {
     charset <%= encoding %>;
     port_in_redirect off;
     keepalive_timeout 5;
+    client_max_body_size 5m;
     root <%= root %>;
   <% if error_page %>
     error_page 404 500 /<%= error_page %>;
